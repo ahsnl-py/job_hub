@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: jobhub
+    database: job-hub-bucket
+
+    tables:
+      - name: stg_jobpost
+      - name: stg_jobpost_detail

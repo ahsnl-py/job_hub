@@ -1,0 +1,691 @@
+[0m22:11:16.690380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d656910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d656dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7ea39c10>]}
+
+
+============================== 22:11:16.693935 | f405cb87-cdc5-407f-9e4f-cbe3a6206147 ==============================
+[0m22:11:16.693935 [info ] [MainThread]: Running with dbt=1.5.9
+[0m22:11:16.694922 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'quiet': 'False', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'write_json': 'True', 'printer_width': '80', 'debug': 'False', 'log_cache_events': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'warn_error': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'no_print': 'None', 'use_colors': 'True', 'static_parser': 'True', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None'}
+[0m22:11:16.706535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f405cb87-cdc5-407f-9e4f-cbe3a6206147', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d4f30d0>]}
+[0m22:11:16.709984 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-czz228za'
+[0m22:11:16.710764 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m22:11:17.092226 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m22:11:17.103224 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m22:11:17.346444 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m22:11:17.361030 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m22:11:18.312914 [info ] [MainThread]: Installed from version 1.1.1
+[0m22:11:18.314650 [info ] [MainThread]: Up to date!
+[0m22:11:18.316145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'f405cb87-cdc5-407f-9e4f-cbe3a6206147', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d966ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d979250>]}
+[0m22:11:18.319896 [debug] [MainThread]: Command `dbt deps` succeeded at 22:11:18.319251 after 1.64 seconds
+[0m22:11:18.321084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d555010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d996f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff815d10d0>]}
+[0m22:11:18.321773 [debug] [MainThread]: Flushing usage events
+[0m22:11:39.228354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff879e6fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff879dafd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff876cd710>]}
+
+
+============================== 22:11:39.233587 | 749c7c79-7848-454d-8d81-18b3e48239f5 ==============================
+[0m22:11:39.233587 [info ] [MainThread]: Running with dbt=1.5.9
+[0m22:11:39.235575 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'target_path': 'None', 'debug': 'False', 'partial_parse': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'static_parser': 'True', 'no_print': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'write_json': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'warn_error': 'None', 'version_check': 'True', 'printer_width': '80', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'use_colors': 'True'}
+[0m22:11:39.679538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '749c7c79-7848-454d-8d81-18b3e48239f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8725ec10>]}
+[0m22:11:39.687341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '749c7c79-7848-454d-8d81-18b3e48239f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff876e2210>]}
+[0m22:11:39.689025 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m22:11:39.700814 [debug] [MainThread]: checksum: dd837546c89c9d03f3c2cb0ca6165266a30da6076d5d44e9991f7c5a8e5f5831, vars: {}, profile: , target: , version: 1.5.9
+[0m22:11:39.703000 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:11:39.703687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '749c7c79-7848-454d-8d81-18b3e48239f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff85687710>]}
+[0m22:11:39.714590 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading jobhub: source/source.yml - Runtime Error
+    Syntax error near line 9
+    ------------------------------
+    6  | 
+    7  |     tables:
+    8  |       - name: stg_jobpost
+    9  | 			- name: stg_jobpost_detail
+    
+    Raw Error:
+    ------------------------------
+    while scanning a plain scalar
+      in "<unicode string>", line 8, column 15
+    found a tab character that violates indentation
+      in "<unicode string>", line 9, column 1
+[0m22:11:39.715936 [debug] [MainThread]: Command `dbt run` failed at 22:11:39.715807 after 0.50 seconds
+[0m22:11:39.716906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff879dbad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8568d2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8568e310>]}
+[0m22:11:39.717819 [debug] [MainThread]: Flushing usage events
+[0m22:12:14.345408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8fd55750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9005aa50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ff00e10>]}
+
+
+============================== 22:12:14.351181 | 87d26c8a-5836-449d-a613-f3b488ea6a91 ==============================
+[0m22:12:14.351181 [info ] [MainThread]: Running with dbt=1.5.9
+[0m22:12:14.355712 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'quiet': 'False', 'use_colors': 'True', 'target_path': 'None', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'version_check': 'True', 'introspect': 'True', 'no_print': 'None', 'warn_error': 'None', 'log_cache_events': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'write_json': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'log_format': 'default', 'fail_fast': 'False', 'partial_parse': 'True', 'indirect_selection': 'eager'}
+[0m22:12:14.653172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '87d26c8a-5836-449d-a613-f3b488ea6a91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f7c5090>]}
+[0m22:12:14.660948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '87d26c8a-5836-449d-a613-f3b488ea6a91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e687850>]}
+[0m22:12:14.661992 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m22:12:14.672053 [debug] [MainThread]: checksum: dd837546c89c9d03f3c2cb0ca6165266a30da6076d5d44e9991f7c5a8e5f5831, vars: {}, profile: , target: , version: 1.5.9
+[0m22:12:14.674287 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:12:14.675099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '87d26c8a-5836-449d-a613-f3b488ea6a91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8dcf1410>]}
+[0m22:12:15.157242 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.jobpost
+[0m22:12:15.160623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '87d26c8a-5836-449d-a613-f3b488ea6a91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8da23ad0>]}
+[0m22:12:15.175145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '87d26c8a-5836-449d-a613-f3b488ea6a91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8dbe4410>]}
+[0m22:12:15.175898 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 474 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics, 0 groups
+[0m22:12:15.176580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '87d26c8a-5836-449d-a613-f3b488ea6a91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8dbf4250>]}
+[0m22:12:15.178244 [info ] [MainThread]: 
+[0m22:12:15.178986 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m22:12:15.179697 [debug] [MainThread]: Command end result
+[0m22:12:15.208102 [debug] [MainThread]: Command `dbt run` succeeded at 22:12:15.207910 after 0.87 seconds
+[0m22:12:15.208954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff91069ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90039a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff93cb5510>]}
+[0m22:12:15.209739 [debug] [MainThread]: Flushing usage events
+[0m22:13:20.168493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ed00990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ed12110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e9d08d0>]}
+
+
+============================== 22:13:20.172773 | 6cc43e51-ab46-4a0e-92d2-c01fee72da7f ==============================
+[0m22:13:20.172773 [info ] [MainThread]: Running with dbt=1.5.9
+[0m22:13:20.173927 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'fail_fast': 'False', 'version_check': 'True', 'write_json': 'True', 'no_print': 'None', 'debug': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'partial_parse': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'use_colors': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'quiet': 'False', 'printer_width': '80', 'introspect': 'True', 'log_format': 'default', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'use_experimental_parser': 'False'}
+[0m22:13:20.493370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6cc43e51-ab46-4a0e-92d2-c01fee72da7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e8bbbd0>]}
+[0m22:13:20.502211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6cc43e51-ab46-4a0e-92d2-c01fee72da7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e55d810>]}
+[0m22:13:20.503532 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m22:13:20.513571 [debug] [MainThread]: checksum: dd837546c89c9d03f3c2cb0ca6165266a30da6076d5d44e9991f7c5a8e5f5831, vars: {}, profile: , target: , version: 1.5.9
+[0m22:13:20.583709 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m22:13:20.584746 [debug] [MainThread]: Partial parsing: updated file: jobhub://models/source/source.yml
+[0m22:13:20.605233 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.jobpost
+[0m22:13:20.608909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6cc43e51-ab46-4a0e-92d2-c01fee72da7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8c97f950>]}
+[0m22:13:20.623650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6cc43e51-ab46-4a0e-92d2-c01fee72da7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8c6b7010>]}
+[0m22:13:20.624356 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 474 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics, 0 groups
+[0m22:13:20.625056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6cc43e51-ab46-4a0e-92d2-c01fee72da7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9196f8d0>]}
+[0m22:13:20.626086 [info ] [MainThread]: 
+[0m22:13:20.626860 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m22:13:20.627925 [debug] [MainThread]: Command end result
+[0m22:13:20.637063 [debug] [MainThread]: Command `dbt run` succeeded at 22:13:20.636960 after 0.48 seconds
+[0m22:13:20.637687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e8a18d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e556e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e8574d0>]}
+[0m22:13:20.638289 [debug] [MainThread]: Flushing usage events
+[0m22:20:37.914855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ba9d810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8bac07d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b837d90>]}
+
+
+============================== 22:20:37.918967 | e818ffd2-d17e-46eb-8756-11f0f000130d ==============================
+[0m22:20:37.918967 [info ] [MainThread]: Running with dbt=1.5.9
+[0m22:20:37.920238 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_path': '/usr/local/airflow/include/dbt/logs', 'log_format': 'default', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'fail_fast': 'False', 'partial_parse': 'True', 'version_check': 'True', 'static_parser': 'True', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'debug': 'False', 'quiet': 'False', 'target_path': 'None', 'warn_error': 'None', 'introspect': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'use_colors': 'True', 'no_print': 'None'}
+[0m22:20:38.259167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e818ffd2-d17e-46eb-8756-11f0f000130d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8bab20d0>]}
+[0m22:20:38.267547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e818ffd2-d17e-46eb-8756-11f0f000130d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff89844bd0>]}
+[0m22:20:38.268798 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m22:20:38.279268 [debug] [MainThread]: checksum: dd837546c89c9d03f3c2cb0ca6165266a30da6076d5d44e9991f7c5a8e5f5831, vars: {}, profile: , target: , version: 1.5.9
+[0m22:20:38.350940 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 3 files added, 0 files changed.
+[0m22:20:38.351924 [debug] [MainThread]: Partial parsing: added file: jobhub://models/transform/jobpost.sql
+[0m22:20:38.352709 [debug] [MainThread]: Partial parsing: added file: jobhub://models/transform/dim_city.sql
+[0m22:20:38.353483 [debug] [MainThread]: Partial parsing: added file: jobhub://models/sources/source.yml
+[0m22:20:38.365382 [debug] [MainThread]: 1699: static parser successfully parsed transform/jobpost.sql
+[0m22:20:38.372318 [debug] [MainThread]: 1699: static parser successfully parsed transform/dim_city.sql
+[0m22:20:38.392175 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.jobpost
+[0m22:20:38.395072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e818ffd2-d17e-46eb-8756-11f0f000130d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff898bfa10>]}
+[0m22:20:38.410421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e818ffd2-d17e-46eb-8756-11f0f000130d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff89912f90>]}
+[0m22:20:38.411168 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 474 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics, 0 groups
+[0m22:20:38.411862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e818ffd2-d17e-46eb-8756-11f0f000130d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ea27890>]}
+[0m22:20:38.413843 [info ] [MainThread]: 
+[0m22:20:38.416319 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:20:38.418817 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_job-hub-bucket'
+[0m22:20:38.420351 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:20:39.174259 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_job-hub-bucket, now create_job-hub-bucket_jobpost)
+[0m22:20:39.176169 [debug] [ThreadPool]: Creating schema "database: "job-hub-bucket"
+schema: "jobpost"
+"
+[0m22:20:39.182232 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:20:39.184298 [debug] [ThreadPool]: On create_job-hub-bucket_jobpost: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "jobhub", "target_name": "dev", "connection_name": "create_job-hub-bucket_jobpost"} */
+create schema if not exists `job-hub-bucket`.`jobpost`
+  
+[0m22:20:40.737417 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=job-hub-bucket&j=bq:US:10393fcb-1e30-41fe-b03c-98fcd6c50fd7&page=queryresults
+[0m22:20:40.748929 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_job-hub-bucket_jobpost, now list_job-hub-bucket_jobpost)
+[0m22:20:40.752074 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:20:41.429259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e818ffd2-d17e-46eb-8756-11f0f000130d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b506450>]}
+[0m22:20:41.435217 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:20:41.438160 [info ] [MainThread]: 
+[0m22:20:41.462667 [debug] [Thread-1 (]: Began running node model.jobhub.dim_city
+[0m22:20:41.464388 [info ] [Thread-1 (]: 1 of 2 START sql view model jobpost.dim_city ................................... [RUN]
+[0m22:20:41.465815 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_job-hub-bucket_jobpost, now model.jobhub.dim_city)
+[0m22:20:41.466826 [debug] [Thread-1 (]: Began compiling node model.jobhub.dim_city
+[0m22:20:41.479166 [debug] [Thread-1 (]: Writing injected SQL for node "model.jobhub.dim_city"
+[0m22:20:41.490421 [debug] [Thread-1 (]: Timing info for model.jobhub.dim_city (compile): 22:20:41.467678 => 22:20:41.490147
+[0m22:20:41.492072 [debug] [Thread-1 (]: Began executing node model.jobhub.dim_city
+[0m22:20:41.506131 [debug] [Thread-1 (]: Writing runtime sql for node "model.jobhub.dim_city"
+[0m22:20:41.514406 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:20:41.516647 [debug] [Thread-1 (]: On model.jobhub.dim_city: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "jobhub", "target_name": "dev", "node_id": "model.jobhub.dim_city"} */
+
+
+  create or replace view `job-hub-bucket`.`jobpost`.`dim_city`
+  OPTIONS()
+  as with cte_cities as (
+  select distinct
+    city, substring(city, 0, strpos(city, ' +')) as city_c,
+    contains_substr(city, '+') as is_city_symbol
+  from `job-hub-bucket`.`jobhub`.`stg_jobpost`
+),
+cte_cities_t as (
+  select trim(if( is_city_symbol, city_c, city)) as city
+  from cte_cities
+)
+select t.city, row_number() over(order by city) as city_key
+from (select distinct city from cte_cities_t) t;
+
+
+[0m22:20:43.088517 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=job-hub-bucket&j=bq:US:489560a5-7784-446f-b924-b9abf4d94f43&page=queryresults
+[0m22:20:43.119486 [debug] [Thread-1 (]: Timing info for model.jobhub.dim_city (execute): 22:20:41.492786 => 22:20:43.119103
+[0m22:20:43.122539 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e818ffd2-d17e-46eb-8756-11f0f000130d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff898cf410>]}
+[0m22:20:43.125143 [info ] [Thread-1 (]: 1 of 2 OK created sql view model jobpost.dim_city .............................. [[32mCREATE VIEW (0 processed)[0m in 1.66s]
+[0m22:20:43.127634 [debug] [Thread-1 (]: Finished running node model.jobhub.dim_city
+[0m22:20:43.129247 [debug] [Thread-1 (]: Began running node model.jobhub.jobpost
+[0m22:20:43.131123 [info ] [Thread-1 (]: 2 of 2 START sql view model jobpost.jobpost .................................... [RUN]
+[0m22:20:43.133073 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jobhub.dim_city, now model.jobhub.jobpost)
+[0m22:20:43.134635 [debug] [Thread-1 (]: Began compiling node model.jobhub.jobpost
+[0m22:20:43.153374 [debug] [Thread-1 (]: Writing injected SQL for node "model.jobhub.jobpost"
+[0m22:20:43.162193 [debug] [Thread-1 (]: Timing info for model.jobhub.jobpost (compile): 22:20:43.136098 => 22:20:43.162008
+[0m22:20:43.163764 [debug] [Thread-1 (]: Began executing node model.jobhub.jobpost
+[0m22:20:43.166480 [debug] [Thread-1 (]: Writing runtime sql for node "model.jobhub.jobpost"
+[0m22:20:43.168866 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:20:43.170577 [debug] [Thread-1 (]: On model.jobhub.jobpost: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "jobhub", "target_name": "dev", "node_id": "model.jobhub.jobpost"} */
+
+
+  create or replace view `job-hub-bucket`.`jobpost`.`jobpost`
+  OPTIONS()
+  as with cte_jobpost as (
+  SELECT load_date, job_id, title, company, city, link, work_from_home,
+          salary as salary_range, rating, response_period,
+          trim(SPLIT(salary, '–‍')[offset(0)]) as salary_lower_r,
+          trim(IF(array_length(SPLIT(salary, '–‍')) > 1, SPLIT(salary, '–‍')[offset(1)], '0')) as salary_higher_r,
+          case when contains_substr(salary, 'CZK') then trim(substring(salary, strpos(salary, 'CZK')))
+               when contains_substr(salary, 'EUR') then trim(substring(salary, strpos(salary, 'EUR')))
+               else '' end as currency,
+          if (district = 'N/A', '', district) as district
+  from `job-hub-bucket`.`jobhub`.`stg_jobpost`
+  where salary != 'N/A'
+)
+select m.title, m.company, m.city, m.district,
+      trim(replace(m.salary_lower_r, m.currency, '')) as salary_lower_r,
+      trim(replace(m.salary_higher_r, m.currency, '')) as salary_higher_r,
+      m.currency,
+      m.link as url,
+      if (m.rating = 'N/A', '', m.rating) as company_rating,
+      cast( if (m.response_period = 'Response within 2 weeks', 0, 1) as bool ) as is_fast_response,
+      cast( if (m.work_from_home = 'N/A', 0, 1) as bool ) as is_remote
+from cte_jobpost m
+order by m.salary_higher_r desc, m.currency;
+
+
+[0m22:20:44.414723 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=job-hub-bucket&j=bq:US:879dbdca-15db-4bfe-b56e-1ff29e86154f&page=queryresults
+[0m22:20:44.427077 [debug] [Thread-1 (]: Timing info for model.jobhub.jobpost (execute): 22:20:43.164549 => 22:20:44.426343
+[0m22:20:44.431067 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e818ffd2-d17e-46eb-8756-11f0f000130d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff88e60290>]}
+[0m22:20:44.434098 [info ] [Thread-1 (]: 2 of 2 OK created sql view model jobpost.jobpost ............................... [[32mCREATE VIEW (0 processed)[0m in 1.30s]
+[0m22:20:44.436497 [debug] [Thread-1 (]: Finished running node model.jobhub.jobpost
+[0m22:20:44.441346 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:20:44.442274 [debug] [MainThread]: Connection 'model.jobhub.jobpost' was properly closed.
+[0m22:20:44.443557 [info ] [MainThread]: 
+[0m22:20:44.444645 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 6.03 seconds (6.03s).
+[0m22:20:44.446588 [debug] [MainThread]: Command end result
+[0m22:20:44.490879 [info ] [MainThread]: 
+[0m22:20:44.492104 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:20:44.493107 [info ] [MainThread]: 
+[0m22:20:44.494269 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m22:20:44.496058 [debug] [MainThread]: Command `dbt run` succeeded at 22:20:44.495874 after 6.59 seconds
+[0m22:20:44.497134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b415ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f9d9350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8bda37d0>]}
+[0m22:20:44.498002 [debug] [MainThread]: Flushing usage events
+[0m22:22:59.758501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8d2bac50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8d71a050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8d799950>]}
+
+
+============================== 22:22:59.762485 | 52631035-e4c5-454b-9f92-803b40ed1f7c ==============================
+[0m22:22:59.762485 [info ] [MainThread]: Running with dbt=1.5.9
+[0m22:22:59.763824 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/usr/local/airflow/include/dbt/', 'target_path': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'static_parser': 'True', 'log_cache_events': 'False', 'debug': 'False', 'use_experimental_parser': 'False', 'log_format': 'default', 'indirect_selection': 'eager', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])'}
+[0m22:23:00.107668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '52631035-e4c5-454b-9f92-803b40ed1f7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8cf560d0>]}
+[0m22:23:00.116309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '52631035-e4c5-454b-9f92-803b40ed1f7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8bef3750>]}
+[0m22:23:00.117653 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m22:23:00.127663 [debug] [MainThread]: checksum: dd837546c89c9d03f3c2cb0ca6165266a30da6076d5d44e9991f7c5a8e5f5831, vars: {}, profile: , target: , version: 1.5.9
+[0m22:23:00.147054 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m22:23:00.147938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '52631035-e4c5-454b-9f92-803b40ed1f7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b297150>]}
+[0m22:23:00.538429 [debug] [MainThread]: 1699: static parser successfully parsed transform/dim_city.sql
+[0m22:23:00.545374 [debug] [MainThread]: 1699: static parser successfully parsed transform/jobpost.sql
+[0m22:23:00.584795 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.jobpost
+[0m22:23:00.588471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '52631035-e4c5-454b-9f92-803b40ed1f7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b36fe90>]}
+[0m22:23:00.602007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '52631035-e4c5-454b-9f92-803b40ed1f7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b17b1d0>]}
+[0m22:23:00.602716 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 474 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics, 0 groups
+[0m22:23:00.603414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '52631035-e4c5-454b-9f92-803b40ed1f7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff903d3790>]}
+[0m22:23:00.604532 [info ] [MainThread]: 
+[0m22:23:00.605373 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:23:00.606708 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_job-hub-bucket'
+[0m22:23:00.607346 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:23:01.231436 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_job-hub-bucket, now list_job-hub-bucket_jobhub)
+[0m22:23:01.236352 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:23:01.828408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '52631035-e4c5-454b-9f92-803b40ed1f7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff903d3a90>]}
+[0m22:23:01.834773 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:23:01.837141 [info ] [MainThread]: 
+[0m22:23:01.864652 [debug] [Thread-1 (]: Began running node model.jobhub.dim_city
+[0m22:23:01.866813 [info ] [Thread-1 (]: 1 of 2 START sql view model jobhub.dim_city .................................... [RUN]
+[0m22:23:01.869094 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_job-hub-bucket_jobhub, now model.jobhub.dim_city)
+[0m22:23:01.870928 [debug] [Thread-1 (]: Began compiling node model.jobhub.dim_city
+[0m22:23:01.879473 [debug] [Thread-1 (]: Writing injected SQL for node "model.jobhub.dim_city"
+[0m22:23:01.883284 [debug] [Thread-1 (]: Timing info for model.jobhub.dim_city (compile): 22:23:01.872090 => 22:23:01.883026
+[0m22:23:01.884316 [debug] [Thread-1 (]: Began executing node model.jobhub.dim_city
+[0m22:23:01.903289 [debug] [Thread-1 (]: Writing runtime sql for node "model.jobhub.dim_city"
+[0m22:23:01.905935 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:23:01.907748 [debug] [Thread-1 (]: On model.jobhub.dim_city: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "jobhub", "target_name": "dev", "node_id": "model.jobhub.dim_city"} */
+
+
+  create or replace view `job-hub-bucket`.`jobhub`.`dim_city`
+  OPTIONS()
+  as with cte_cities as (
+  select distinct
+    city, substring(city, 0, strpos(city, ' +')) as city_c,
+    contains_substr(city, '+') as is_city_symbol
+  from `job-hub-bucket`.`jobhub`.`stg_jobpost`
+),
+cte_cities_t as (
+  select trim(if( is_city_symbol, city_c, city)) as city
+  from cte_cities
+)
+select t.city, row_number() over(order by city) as city_key
+from (select distinct city from cte_cities_t) t;
+
+
+[0m22:23:03.288530 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=job-hub-bucket&j=bq:US:be7f351a-200c-4886-b21f-f050e6393a35&page=queryresults
+[0m22:23:03.319415 [debug] [Thread-1 (]: Timing info for model.jobhub.dim_city (execute): 22:23:01.885149 => 22:23:03.319100
+[0m22:23:03.322868 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '52631035-e4c5-454b-9f92-803b40ed1f7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b2180d0>]}
+[0m22:23:03.325065 [info ] [Thread-1 (]: 1 of 2 OK created sql view model jobhub.dim_city ............................... [[32mCREATE VIEW (0 processed)[0m in 1.45s]
+[0m22:23:03.327276 [debug] [Thread-1 (]: Finished running node model.jobhub.dim_city
+[0m22:23:03.329204 [debug] [Thread-1 (]: Began running node model.jobhub.jobpost
+[0m22:23:03.330738 [info ] [Thread-1 (]: 2 of 2 START sql view model jobhub.jobpost ..................................... [RUN]
+[0m22:23:03.332337 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jobhub.dim_city, now model.jobhub.jobpost)
+[0m22:23:03.333854 [debug] [Thread-1 (]: Began compiling node model.jobhub.jobpost
+[0m22:23:03.338718 [debug] [Thread-1 (]: Writing injected SQL for node "model.jobhub.jobpost"
+[0m22:23:03.341840 [debug] [Thread-1 (]: Timing info for model.jobhub.jobpost (compile): 22:23:03.335070 => 22:23:03.341551
+[0m22:23:03.342889 [debug] [Thread-1 (]: Began executing node model.jobhub.jobpost
+[0m22:23:03.345818 [debug] [Thread-1 (]: Writing runtime sql for node "model.jobhub.jobpost"
+[0m22:23:03.348451 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:23:03.351722 [debug] [Thread-1 (]: On model.jobhub.jobpost: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "jobhub", "target_name": "dev", "node_id": "model.jobhub.jobpost"} */
+
+
+  create or replace view `job-hub-bucket`.`jobhub`.`jobpost`
+  OPTIONS()
+  as with cte_jobpost as (
+  SELECT load_date, job_id, title, company, city, link, work_from_home,
+          salary as salary_range, rating, response_period,
+          trim(SPLIT(salary, '–‍')[offset(0)]) as salary_lower_r,
+          trim(IF(array_length(SPLIT(salary, '–‍')) > 1, SPLIT(salary, '–‍')[offset(1)], '0')) as salary_higher_r,
+          case when contains_substr(salary, 'CZK') then trim(substring(salary, strpos(salary, 'CZK')))
+               when contains_substr(salary, 'EUR') then trim(substring(salary, strpos(salary, 'EUR')))
+               else '' end as currency,
+          if (district = 'N/A', '', district) as district
+  from `job-hub-bucket`.`jobhub`.`stg_jobpost`
+  where salary != 'N/A'
+)
+select m.title, m.company, m.city, m.district,
+      trim(replace(m.salary_lower_r, m.currency, '')) as salary_lower_r,
+      trim(replace(m.salary_higher_r, m.currency, '')) as salary_higher_r,
+      m.currency,
+      m.link as url,
+      if (m.rating = 'N/A', '', m.rating) as company_rating,
+      cast( if (m.response_period = 'Response within 2 weeks', 0, 1) as bool ) as is_fast_response,
+      cast( if (m.work_from_home = 'N/A', 0, 1) as bool ) as is_remote
+from cte_jobpost m
+order by m.salary_higher_r desc, m.currency;
+
+
+[0m22:23:04.540137 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=job-hub-bucket&j=bq:US:77dbe9c0-a422-4982-99a0-b9cd72e1c08c&page=queryresults
+[0m22:23:04.550845 [debug] [Thread-1 (]: Timing info for model.jobhub.jobpost (execute): 22:23:03.343749 => 22:23:04.550485
+[0m22:23:04.554534 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '52631035-e4c5-454b-9f92-803b40ed1f7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b3d3190>]}
+[0m22:23:04.558099 [info ] [Thread-1 (]: 2 of 2 OK created sql view model jobhub.jobpost ................................ [[32mCREATE VIEW (0 processed)[0m in 1.22s]
+[0m22:23:04.561693 [debug] [Thread-1 (]: Finished running node model.jobhub.jobpost
+[0m22:23:04.568574 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:23:04.570269 [debug] [MainThread]: Connection 'model.jobhub.jobpost' was properly closed.
+[0m22:23:04.572114 [info ] [MainThread]: 
+[0m22:23:04.573943 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 3.97 seconds (3.97s).
+[0m22:23:04.576610 [debug] [MainThread]: Command end result
+[0m22:23:04.608782 [info ] [MainThread]: 
+[0m22:23:04.610473 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:23:04.611582 [info ] [MainThread]: 
+[0m22:23:04.613813 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m22:23:04.618862 [debug] [MainThread]: Command `dbt run` succeeded at 22:23:04.618637 after 4.87 seconds
+[0m22:23:04.619986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8d729690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8d3cd150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8d475e90>]}
+[0m22:23:04.620759 [debug] [MainThread]: Flushing usage events
+[0m22:37:18.142456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff89b73550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff89d8d3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff89c359d0>]}
+
+
+============================== 22:37:18.146994 | 5dec6999-8d68-4667-88ab-e1f0f1559466 ==============================
+[0m22:37:18.146994 [info ] [MainThread]: Running with dbt=1.5.9
+[0m22:37:18.148598 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'log_format': 'default', 'indirect_selection': 'eager', 'fail_fast': 'False', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'partial_parse': 'True', 'log_cache_events': 'False', 'no_print': 'None', 'use_colors': 'True', 'debug': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'log_path': '/usr/local/airflow/include/dbt/logs', 'cache_selected_only': 'False', 'quiet': 'False', 'target_path': 'None', 'write_json': 'True'}
+[0m22:37:18.486012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5dec6999-8d68-4667-88ab-e1f0f1559466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff87aea450>]}
+[0m22:37:18.502908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5dec6999-8d68-4667-88ab-e1f0f1559466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff89bca590>]}
+[0m22:37:18.505202 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m22:37:18.516104 [debug] [MainThread]: checksum: dd837546c89c9d03f3c2cb0ca6165266a30da6076d5d44e9991f7c5a8e5f5831, vars: {}, profile: , target: , version: 1.5.9
+[0m22:37:18.586359 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 2 files changed.
+[0m22:37:18.587424 [debug] [MainThread]: Partial parsing: added file: jobhub://models/transform/dim_currency.sql
+[0m22:37:18.588103 [debug] [MainThread]: Partial parsing: updated file: jobhub://models/transform/jobpost.sql
+[0m22:37:18.588794 [debug] [MainThread]: Partial parsing: updated file: jobhub://models/transform/dim_city.sql
+[0m22:37:18.600850 [debug] [MainThread]: 1699: static parser successfully parsed transform/dim_currency.sql
+[0m22:37:18.608540 [debug] [MainThread]: 1699: static parser successfully parsed transform/jobpost.sql
+[0m22:37:18.610774 [debug] [MainThread]: 1699: static parser successfully parsed transform/dim_city.sql
+[0m22:37:18.632974 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.jobpost
+[0m22:37:18.637447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5dec6999-8d68-4667-88ab-e1f0f1559466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff87b3a3d0>]}
+[0m22:37:18.653830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5dec6999-8d68-4667-88ab-e1f0f1559466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff879f2090>]}
+[0m22:37:18.654643 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 474 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics, 0 groups
+[0m22:37:18.655383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5dec6999-8d68-4667-88ab-e1f0f1559466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8cb937d0>]}
+[0m22:37:18.657039 [info ] [MainThread]: 
+[0m22:37:18.658012 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:37:18.659517 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_job-hub-bucket'
+[0m22:37:18.660148 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:37:19.316529 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_job-hub-bucket, now list_job-hub-bucket_jobhub)
+[0m22:37:19.322288 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:37:20.034601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5dec6999-8d68-4667-88ab-e1f0f1559466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a777d10>]}
+[0m22:37:20.040281 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:37:20.044037 [info ] [MainThread]: 
+[0m22:37:20.074130 [debug] [Thread-1 (]: Began running node model.jobhub.dim_city
+[0m22:37:20.077130 [info ] [Thread-1 (]: 1 of 3 START sql view model jobhub.dim_city .................................... [RUN]
+[0m22:37:20.079680 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_job-hub-bucket_jobhub, now model.jobhub.dim_city)
+[0m22:37:20.081313 [debug] [Thread-1 (]: Began compiling node model.jobhub.dim_city
+[0m22:37:20.096638 [debug] [Thread-1 (]: Writing injected SQL for node "model.jobhub.dim_city"
+[0m22:37:20.103191 [debug] [Thread-1 (]: Timing info for model.jobhub.dim_city (compile): 22:37:20.083006 => 22:37:20.101989
+[0m22:37:20.106470 [debug] [Thread-1 (]: Began executing node model.jobhub.dim_city
+[0m22:37:20.135471 [debug] [Thread-1 (]: Writing runtime sql for node "model.jobhub.dim_city"
+[0m22:37:20.173971 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:37:20.225087 [debug] [Thread-1 (]: On model.jobhub.dim_city: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "jobhub", "target_name": "dev", "node_id": "model.jobhub.dim_city"} */
+
+
+  create or replace view `job-hub-bucket`.`jobhub`.`dim_city`
+  OPTIONS()
+  as with cte_cities as (
+  select distinct
+    city, substring(city, 0, strpos(city, ' +')) as city_c,
+    contains_substr(city, '+') as is_city_symbol
+  from `job-hub-bucket`.`jobhub`.`stg_jobpost`
+),
+cte_cities_t as (
+  select trim(if( is_city_symbol, city_c, city)) as city
+  from cte_cities
+)
+select t.city, row_number() over(order by city) as city_id
+from (select distinct city from cte_cities_t) t;
+
+
+[0m22:37:21.672132 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=job-hub-bucket&j=bq:US:72f92944-7773-47f2-b135-fc2f73cd3de0&page=queryresults
+[0m22:37:21.703619 [debug] [Thread-1 (]: Timing info for model.jobhub.dim_city (execute): 22:37:20.107865 => 22:37:21.703202
+[0m22:37:21.706793 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5dec6999-8d68-4667-88ab-e1f0f1559466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff87bb4ad0>]}
+[0m22:37:21.709250 [info ] [Thread-1 (]: 1 of 3 OK created sql view model jobhub.dim_city ............................... [[32mCREATE VIEW (0 processed)[0m in 1.63s]
+[0m22:37:21.711842 [debug] [Thread-1 (]: Finished running node model.jobhub.dim_city
+[0m22:37:21.713631 [debug] [Thread-1 (]: Began running node model.jobhub.jobpost
+[0m22:37:21.715024 [info ] [Thread-1 (]: 2 of 3 START sql view model jobhub.jobpost ..................................... [RUN]
+[0m22:37:21.717183 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jobhub.dim_city, now model.jobhub.jobpost)
+[0m22:37:21.718469 [debug] [Thread-1 (]: Began compiling node model.jobhub.jobpost
+[0m22:37:21.722777 [debug] [Thread-1 (]: Writing injected SQL for node "model.jobhub.jobpost"
+[0m22:37:21.728475 [debug] [Thread-1 (]: Timing info for model.jobhub.jobpost (compile): 22:37:21.719499 => 22:37:21.728213
+[0m22:37:21.729952 [debug] [Thread-1 (]: Began executing node model.jobhub.jobpost
+[0m22:37:21.744046 [debug] [Thread-1 (]: Writing runtime sql for node "model.jobhub.jobpost"
+[0m22:37:21.748099 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:37:21.751435 [debug] [Thread-1 (]: On model.jobhub.jobpost: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "jobhub", "target_name": "dev", "node_id": "model.jobhub.jobpost"} */
+
+
+  create or replace view `job-hub-bucket`.`jobhub`.`jobpost`
+  OPTIONS()
+  as with cte_jobpost as (
+  SELECT load_date, job_id, title, company, city, link, work_from_home,
+          salary as salary_range, rating, response_period,
+          trim(SPLIT(salary, '–‍')[offset(0)]) as salary_lower_r,
+          trim(IF(array_length(SPLIT(salary, '–‍')) > 1, SPLIT(salary, '–‍')[offset(1)], '0')) as salary_higher_r,
+          case when contains_substr(salary, 'CZK') then trim(substring(salary, strpos(salary, 'CZK')))
+               when contains_substr(salary, 'EUR') then trim(substring(salary, strpos(salary, 'EUR')))
+               else '' end as currency,
+          if (district = 'N/A', '', district) as district
+  from `job-hub-bucket`.`jobhub`.`stg_jobpost`
+  where salary != 'N/A'
+)
+select m.load_date, m.job_id, m.title, m.company, m.city, m.district,
+      trim(replace(m.salary_lower_r, m.currency, '')) as salary_lower_r,
+      trim(replace(m.salary_higher_r, m.currency, '')) as salary_higher_r,
+      m.currency,
+      m.link as url,
+      if (m.rating = 'N/A', '', m.rating) as company_rating,
+      cast( if (m.response_period = 'Response within 2 weeks', 0, 1) as bool ) as is_fast_response,
+      cast( if (m.work_from_home = 'N/A', 0, 1) as bool ) as is_remote
+from cte_jobpost m
+order by m.salary_higher_r desc, m.currency;
+
+
+[0m22:37:23.110578 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=job-hub-bucket&j=bq:US:c981d577-81e8-4e36-bcc8-3ba30f77132f&page=queryresults
+[0m22:37:23.115702 [debug] [Thread-1 (]: Timing info for model.jobhub.jobpost (execute): 22:37:21.731558 => 22:37:23.115389
+[0m22:37:23.118142 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5dec6999-8d68-4667-88ab-e1f0f1559466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a4f3350>]}
+[0m22:37:23.120122 [info ] [Thread-1 (]: 2 of 3 OK created sql view model jobhub.jobpost ................................ [[32mCREATE VIEW (0 processed)[0m in 1.40s]
+[0m22:37:23.122137 [debug] [Thread-1 (]: Finished running node model.jobhub.jobpost
+[0m22:37:23.124813 [debug] [Thread-1 (]: Began running node model.jobhub.dim_currency
+[0m22:37:23.126441 [info ] [Thread-1 (]: 3 of 3 START sql view model jobhub.dim_currency ................................ [RUN]
+[0m22:37:23.128320 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jobhub.jobpost, now model.jobhub.dim_currency)
+[0m22:37:23.129661 [debug] [Thread-1 (]: Began compiling node model.jobhub.dim_currency
+[0m22:37:23.135925 [debug] [Thread-1 (]: Writing injected SQL for node "model.jobhub.dim_currency"
+[0m22:37:23.139816 [debug] [Thread-1 (]: Timing info for model.jobhub.dim_currency (compile): 22:37:23.130796 => 22:37:23.139628
+[0m22:37:23.140869 [debug] [Thread-1 (]: Began executing node model.jobhub.dim_currency
+[0m22:37:23.144273 [debug] [Thread-1 (]: Writing runtime sql for node "model.jobhub.dim_currency"
+[0m22:37:23.146877 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:37:23.149164 [debug] [Thread-1 (]: On model.jobhub.dim_currency: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "jobhub", "target_name": "dev", "node_id": "model.jobhub.dim_currency"} */
+
+
+  create or replace view `job-hub-bucket`.`jobhub`.`dim_currency`
+  OPTIONS()
+  as select  currency,
+        case when currency = 'EUR' then 'Euro'
+            when currency = 'CZK' then 'Czech Koruna'
+        end as currency_desc,
+        row_number() over(order by currency ) as currency_id
+from (
+    select
+        distinct currency
+    from `job-hub-bucket`.`jobhub`.`jobpost`
+);
+
+
+[0m22:37:24.869211 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=job-hub-bucket&j=bq:US:dd19dc82-4cc7-4cd9-85e2-58a8e5a58935&page=queryresults
+[0m22:37:24.880778 [debug] [Thread-1 (]: Timing info for model.jobhub.dim_currency (execute): 22:37:23.141747 => 22:37:24.880227
+[0m22:37:24.884395 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5dec6999-8d68-4667-88ab-e1f0f1559466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff87a43090>]}
+[0m22:37:24.887236 [info ] [Thread-1 (]: 3 of 3 OK created sql view model jobhub.dim_currency ........................... [[32mCREATE VIEW (0 processed)[0m in 1.76s]
+[0m22:37:24.890378 [debug] [Thread-1 (]: Finished running node model.jobhub.dim_currency
+[0m22:37:24.896878 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:37:24.898548 [debug] [MainThread]: Connection 'model.jobhub.dim_currency' was properly closed.
+[0m22:37:24.900456 [info ] [MainThread]: 
+[0m22:37:24.902391 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 6.24 seconds (6.24s).
+[0m22:37:24.905159 [debug] [MainThread]: Command end result
+[0m22:37:24.932326 [info ] [MainThread]: 
+[0m22:37:24.934223 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:37:24.935458 [info ] [MainThread]: 
+[0m22:37:24.939955 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m22:37:24.944445 [debug] [MainThread]: Command `dbt run` succeeded at 22:37:24.944152 after 6.81 seconds
+[0m22:37:24.946572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff89724d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff89b9e050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff89eb7d90>]}
+[0m22:37:24.948098 [debug] [MainThread]: Flushing usage events
+[0m23:37:13.614166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a4c6b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a9d9390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a6b3b50>]}
+
+
+============================== 23:37:13.620114 | e8bacd57-c412-4b0c-9c74-ffd1f778b1c3 ==============================
+[0m23:37:13.620114 [info ] [MainThread]: Running with dbt=1.5.9
+[0m23:37:13.621768 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'static_parser': 'True', 'debug': 'False', 'version_check': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'introspect': 'True', 'use_colors': 'True', 'quiet': 'False', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'warn_error': 'None', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'no_print': 'None', 'partial_parse': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'printer_width': '80', 'write_json': 'True'}
+[0m23:37:14.497966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e8bacd57-c412-4b0c-9c74-ffd1f778b1c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ab4f510>]}
+[0m23:37:14.510602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e8bacd57-c412-4b0c-9c74-ffd1f778b1c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff88ae8e10>]}
+[0m23:37:14.512679 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m23:37:14.528418 [debug] [MainThread]: checksum: dd837546c89c9d03f3c2cb0ca6165266a30da6076d5d44e9991f7c5a8e5f5831, vars: {}, profile: , target: , version: 1.5.9
+[0m23:37:14.742683 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 2 files changed.
+[0m23:37:14.744222 [debug] [MainThread]: Partial parsing: added file: jobhub://models/transform/fact_jobposts.sql
+[0m23:37:14.745407 [debug] [MainThread]: Partial parsing: updated file: jobhub://models/transform/dim_city.sql
+[0m23:37:14.746304 [debug] [MainThread]: Partial parsing: updated file: jobhub://models/transform/dim_currency.sql
+[0m23:37:14.768750 [debug] [MainThread]: 1699: static parser successfully parsed transform/fact_jobposts.sql
+[0m23:37:14.781083 [debug] [MainThread]: 1603: static parser failed on transform/dim_city.sql
+[0m23:37:14.797490 [debug] [MainThread]: 1602: parser fallback to jinja rendering on transform/dim_city.sql
+[0m23:37:14.799575 [debug] [MainThread]: 1603: static parser failed on transform/dim_currency.sql
+[0m23:37:14.805147 [debug] [MainThread]: 1602: parser fallback to jinja rendering on transform/dim_currency.sql
+[0m23:37:14.836062 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.jobpost
+[0m23:37:14.841041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e8bacd57-c412-4b0c-9c74-ffd1f778b1c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff880f5c90>]}
+[0m23:37:14.918700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e8bacd57-c412-4b0c-9c74-ffd1f778b1c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff889d9f90>]}
+[0m23:37:14.920321 [info ] [MainThread]: Found 4 models, 0 tests, 0 snapshots, 0 analyses, 474 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics, 0 groups
+[0m23:37:14.922398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e8bacd57-c412-4b0c-9c74-ffd1f778b1c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8dad7890>]}
+[0m23:37:14.924768 [info ] [MainThread]: 
+[0m23:37:14.926719 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:37:14.928943 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_job-hub-bucket'
+[0m23:37:14.930206 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:37:15.712108 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_job-hub-bucket, now list_job-hub-bucket_jobhub)
+[0m23:37:15.716883 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:37:16.471335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e8bacd57-c412-4b0c-9c74-ffd1f778b1c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b6f3c90>]}
+[0m23:37:16.476155 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:37:16.477900 [info ] [MainThread]: 
+[0m23:37:16.516118 [debug] [Thread-1 (]: Began running node model.jobhub.dim_city
+[0m23:37:16.520200 [info ] [Thread-1 (]: 1 of 4 START sql view model jobhub.dim_city .................................... [RUN]
+[0m23:37:16.523106 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_job-hub-bucket_jobhub, now model.jobhub.dim_city)
+[0m23:37:16.525134 [debug] [Thread-1 (]: Began compiling node model.jobhub.dim_city
+[0m23:37:16.538737 [debug] [Thread-1 (]: Writing injected SQL for node "model.jobhub.dim_city"
+[0m23:37:16.552588 [debug] [Thread-1 (]: Timing info for model.jobhub.dim_city (compile): 23:37:16.526731 => 23:37:16.552185
+[0m23:37:16.553983 [debug] [Thread-1 (]: Began executing node model.jobhub.dim_city
+[0m23:37:16.592470 [debug] [Thread-1 (]: Writing runtime sql for node "model.jobhub.dim_city"
+[0m23:37:16.605744 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:37:16.616280 [debug] [Thread-1 (]: On model.jobhub.dim_city: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "jobhub", "target_name": "dev", "node_id": "model.jobhub.dim_city"} */
+
+
+  create or replace view `job-hub-bucket`.`jobhub`.`dim_city`
+  OPTIONS()
+  as with cte_cities as (
+  select distinct
+    city, substring(city, 0, strpos(city, ' +')) as city_c,
+    contains_substr(city, '+') as is_city_symbol
+  from `job-hub-bucket`.`jobhub`.`stg_jobpost`
+),
+cte_cities_t as (
+  select trim(if( is_city_symbol, city_c, city)) as city
+  from cte_cities
+)
+select t.city, to_hex(md5(cast(coalesce(cast(city as STRING), '_dbt_utils_surrogate_key_null_') as STRING))) as city_id
+from (select distinct city from cte_cities_t) t;
+
+
+[0m23:37:18.244762 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=job-hub-bucket&j=bq:US:594cb368-bd03-4100-ae72-02a40f7b8ea8&page=queryresults
+[0m23:37:18.275692 [debug] [Thread-1 (]: Timing info for model.jobhub.dim_city (execute): 23:37:16.555033 => 23:37:18.275298
+[0m23:37:18.279176 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8bacd57-c412-4b0c-9c74-ffd1f778b1c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff888e8e10>]}
+[0m23:37:18.282207 [info ] [Thread-1 (]: 1 of 4 OK created sql view model jobhub.dim_city ............................... [[32mCREATE VIEW (0 processed)[0m in 1.76s]
+[0m23:37:18.285557 [debug] [Thread-1 (]: Finished running node model.jobhub.dim_city
+[0m23:37:18.287144 [debug] [Thread-1 (]: Began running node model.jobhub.jobpost
+[0m23:37:18.288697 [info ] [Thread-1 (]: 2 of 4 START sql view model jobhub.jobpost ..................................... [RUN]
+[0m23:37:18.290322 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jobhub.dim_city, now model.jobhub.jobpost)
+[0m23:37:18.292035 [debug] [Thread-1 (]: Began compiling node model.jobhub.jobpost
+[0m23:37:18.295992 [debug] [Thread-1 (]: Writing injected SQL for node "model.jobhub.jobpost"
+[0m23:37:18.300995 [debug] [Thread-1 (]: Timing info for model.jobhub.jobpost (compile): 23:37:18.293175 => 23:37:18.300738
+[0m23:37:18.302352 [debug] [Thread-1 (]: Began executing node model.jobhub.jobpost
+[0m23:37:18.305554 [debug] [Thread-1 (]: Writing runtime sql for node "model.jobhub.jobpost"
+[0m23:37:18.311016 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:37:18.317405 [debug] [Thread-1 (]: On model.jobhub.jobpost: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "jobhub", "target_name": "dev", "node_id": "model.jobhub.jobpost"} */
+
+
+  create or replace view `job-hub-bucket`.`jobhub`.`jobpost`
+  OPTIONS()
+  as with cte_jobpost as (
+  SELECT load_date, job_id, title, company, city, link, work_from_home,
+          salary as salary_range, rating, response_period,
+          trim(SPLIT(salary, '–‍')[offset(0)]) as salary_lower_r,
+          trim(IF(array_length(SPLIT(salary, '–‍')) > 1, SPLIT(salary, '–‍')[offset(1)], '0')) as salary_higher_r,
+          case when contains_substr(salary, 'CZK') then trim(substring(salary, strpos(salary, 'CZK')))
+               when contains_substr(salary, 'EUR') then trim(substring(salary, strpos(salary, 'EUR')))
+               else '' end as currency,
+          if (district = 'N/A', '', district) as district
+  from `job-hub-bucket`.`jobhub`.`stg_jobpost`
+  where salary != 'N/A'
+)
+select m.load_date, m.job_id, m.title, m.company, m.city, m.district,
+      trim(replace(m.salary_lower_r, m.currency, '')) as salary_lower_r,
+      trim(replace(m.salary_higher_r, m.currency, '')) as salary_higher_r,
+      m.currency,
+      m.link as url,
+      if (m.rating = 'N/A', '', m.rating) as company_rating,
+      cast( if (m.response_period = 'Response within 2 weeks', 0, 1) as bool ) as is_fast_response,
+      cast( if (m.work_from_home = 'N/A', 0, 1) as bool ) as is_remote
+from cte_jobpost m
+order by m.salary_higher_r desc, m.currency;
+
+
+[0m23:37:19.880635 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=job-hub-bucket&j=bq:US:9f9d685a-88db-4ba1-9cc7-8b498ca2e2b1&page=queryresults
+[0m23:37:19.900418 [debug] [Thread-1 (]: Timing info for model.jobhub.jobpost (execute): 23:37:18.303218 => 23:37:19.899488
+[0m23:37:19.904776 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8bacd57-c412-4b0c-9c74-ffd1f778b1c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff88848110>]}
+[0m23:37:19.908675 [info ] [Thread-1 (]: 2 of 4 OK created sql view model jobhub.jobpost ................................ [[32mCREATE VIEW (0 processed)[0m in 1.61s]
+[0m23:37:19.911991 [debug] [Thread-1 (]: Finished running node model.jobhub.jobpost
+[0m23:37:19.916616 [debug] [Thread-1 (]: Began running node model.jobhub.dim_currency
+[0m23:37:19.917956 [info ] [Thread-1 (]: 3 of 4 START sql view model jobhub.dim_currency ................................ [RUN]
+[0m23:37:19.919808 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jobhub.jobpost, now model.jobhub.dim_currency)
+[0m23:37:19.921157 [debug] [Thread-1 (]: Began compiling node model.jobhub.dim_currency
+[0m23:37:19.935076 [debug] [Thread-1 (]: Writing injected SQL for node "model.jobhub.dim_currency"
+[0m23:37:19.943810 [debug] [Thread-1 (]: Timing info for model.jobhub.dim_currency (compile): 23:37:19.922240 => 23:37:19.943524
+[0m23:37:19.946433 [debug] [Thread-1 (]: Began executing node model.jobhub.dim_currency
+[0m23:37:19.951596 [debug] [Thread-1 (]: Writing runtime sql for node "model.jobhub.dim_currency"
+[0m23:37:19.955713 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:37:19.960258 [debug] [Thread-1 (]: On model.jobhub.dim_currency: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "jobhub", "target_name": "dev", "node_id": "model.jobhub.dim_currency"} */
+
+
+  create or replace view `job-hub-bucket`.`jobhub`.`dim_currency`
+  OPTIONS()
+  as select  currency,
+        case when currency = 'EUR' then 'Euro'
+            when currency = 'CZK' then 'Czech Koruna'
+        end as currency_desc,
+        to_hex(md5(cast(coalesce(cast(currency as STRING), '_dbt_utils_surrogate_key_null_') as STRING))) as currency_id
+from (
+    select
+        distinct currency
+    from `job-hub-bucket`.`jobhub`.`jobpost`
+);
+
+
+[0m23:37:21.400885 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=job-hub-bucket&j=bq:US:5683c67d-4314-47e8-9fd7-c59d0e261b84&page=queryresults
+[0m23:37:21.409553 [debug] [Thread-1 (]: Timing info for model.jobhub.dim_currency (execute): 23:37:19.947746 => 23:37:21.409196
+[0m23:37:21.413205 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8bacd57-c412-4b0c-9c74-ffd1f778b1c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff88908950>]}
+[0m23:37:21.416226 [info ] [Thread-1 (]: 3 of 4 OK created sql view model jobhub.dim_currency ........................... [[32mCREATE VIEW (0 processed)[0m in 1.49s]
+[0m23:37:21.419015 [debug] [Thread-1 (]: Finished running node model.jobhub.dim_currency
+[0m23:37:21.423016 [debug] [Thread-1 (]: Began running node model.jobhub.fact_jobposts
+[0m23:37:21.424919 [info ] [Thread-1 (]: 4 of 4 START sql view model jobhub.fact_jobposts ............................... [RUN]
+[0m23:37:21.427852 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jobhub.dim_currency, now model.jobhub.fact_jobposts)
+[0m23:37:21.429341 [debug] [Thread-1 (]: Began compiling node model.jobhub.fact_jobposts
+[0m23:37:21.435728 [debug] [Thread-1 (]: Writing injected SQL for node "model.jobhub.fact_jobposts"
+[0m23:37:21.440228 [debug] [Thread-1 (]: Timing info for model.jobhub.fact_jobposts (compile): 23:37:21.430671 => 23:37:21.439996
+[0m23:37:21.441395 [debug] [Thread-1 (]: Began executing node model.jobhub.fact_jobposts
+[0m23:37:21.444635 [debug] [Thread-1 (]: Writing runtime sql for node "model.jobhub.fact_jobposts"
+[0m23:37:21.447892 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:37:21.452540 [debug] [Thread-1 (]: On model.jobhub.fact_jobposts: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "jobhub", "target_name": "dev", "node_id": "model.jobhub.fact_jobposts"} */
+
+
+  create or replace view `job-hub-bucket`.`jobhub`.`fact_jobposts`
+  OPTIONS()
+  as select t.city_id, t.currency_id, 
+  max(salary) as max_salary_city,
+  sum(salary) as total_salary_city,
+  min(salary) as min_salary_city
+from (
+  SELECT jp.load_date, dc.city_id, dcy.currency_id, 
+            CASE WHEN jp.salary_higher_r != '0' then  
+                CAST(REPLACE(REGEXP_EXTRACT(jp.salary_higher_r, r'\d+\,\d*'), ',', '') AS INT64)
+               else 0 end as salary
+  FROM `job-hub-bucket`.`jobhub`.`jobpost` jp
+  INNER JOIN `job-hub-bucket`.`jobhub`.`dim_city` dc 
+    on jp.city = dc.city
+  INNER JOIN `job-hub-bucket`.`jobhub`.`dim_currency` dcy
+    on jp.currency = dcy.currency
+  where jp.salary_higher_r != '' or jp.salary_higher_r is not null
+) t
+group by t.load_date, t.city_id, t.currency_id;
+
+
+[0m23:37:22.929383 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=job-hub-bucket&j=bq:US:e5dfadb0-8627-4ec0-bba8-d460668212cf&page=queryresults
+[0m23:37:22.938877 [debug] [Thread-1 (]: Timing info for model.jobhub.fact_jobposts (execute): 23:37:21.442318 => 23:37:22.938540
+[0m23:37:22.941877 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8bacd57-c412-4b0c-9c74-ffd1f778b1c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff887fbad0>]}
+[0m23:37:22.944424 [info ] [Thread-1 (]: 4 of 4 OK created sql view model jobhub.fact_jobposts .......................... [[32mCREATE VIEW (0 processed)[0m in 1.51s]
+[0m23:37:22.948794 [debug] [Thread-1 (]: Finished running node model.jobhub.fact_jobposts
+[0m23:37:22.954607 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:37:22.956179 [debug] [MainThread]: Connection 'model.jobhub.fact_jobposts' was properly closed.
+[0m23:37:22.958228 [info ] [MainThread]: 
+[0m23:37:22.960245 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 8.03 seconds (8.03s).
+[0m23:37:22.963223 [debug] [MainThread]: Command end result
+[0m23:37:22.996501 [info ] [MainThread]: 
+[0m23:37:22.998545 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:37:23.000720 [info ] [MainThread]: 
+[0m23:37:23.004376 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m23:37:23.007647 [debug] [MainThread]: Command `dbt run` succeeded at 23:37:23.007410 after 9.41 seconds
+[0m23:37:23.009195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a8fc250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ab07790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ab3a310>]}
+[0m23:37:23.010425 [debug] [MainThread]: Flushing usage events

@@ -1,0 +1,7 @@
+name: 'jobhub'
+
+profile: 'jobhub'
+
+models:
+  jobpost:
+    materialized: table
